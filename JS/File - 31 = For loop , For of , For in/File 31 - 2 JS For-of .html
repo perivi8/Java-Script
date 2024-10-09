@@ -1,0 +1,38 @@
+<!-- For-of loop -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>For - of loop</title>
+  </head>
+  <body>
+    <h1>For-of loop</h1>
+    <script>
+      //  For-of is used for Array
+
+      const numbers = [45, 4, 9, 16, 25];
+      for (let value of numbers) {
+        console.log(value); // Outputs: 45, 4, 9, 16, 25
+      }
+
+      var fruits = ["Apple", "Banana", "Goa"];
+      for (const iterator of fruits) {
+        console.log(iterator);
+        console.log(`The ${iterator} is an ${fruits[iterator]}`)
+      }
+
+
+    //    If we are using For-of in Objects it shows Error
+      var names = {
+        name_1: "Hari",
+        name_2: "Perivi",
+        name_3: "Krishna",
+      };
+      for(var NAMES of names){
+        console.log(NAMES)
+      }
+    </script>
+  </body>
+</html>

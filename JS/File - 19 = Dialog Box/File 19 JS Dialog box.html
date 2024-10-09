@@ -1,0 +1,59 @@
+<!-- Dialog Box -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dialog box</title>
+</head>
+<body>
+    <h1>Dialog box</h1>
+    <h3>Dialog box are basically 3 Types :</h3>
+    <ol>
+        <li>Alert</li>
+        <li>Prompt</li>
+        <li>Confirm</li>
+    </ol>
+    <script>
+        // alert("This is alert")
+        // prompt('This is prompt')
+        // confirm("this is confirm")
+
+        // // Ex 1
+        // if (10 > 20) {
+        //     alert("this is True")
+        // }
+        // else{
+        //     alert("False")
+        // }
+
+
+        //  Ex 2
+        // Little bit confuse.....,
+
+        woman = confirm("are you women ?")
+        man = confirm("are you man ?")
+        // woman = "women?"
+        // man = "man"
+
+        if (woman) {
+           var name = prompt("please enter your name MS") 
+           confirm('login')
+           document.write("welcome Ms.",name)     
+        }
+        else if (man) {
+            var name = prompt("Eneter your name MR.")
+            confirm('login')
+            document.write("welcome Mr." ,name)    
+        }
+        else{
+           alert("Are you Robot")
+        }
+        
+        // confirm('Are yo want to  enter ?')
+        // prompt("enter your details")
+        // confirm("ok")
+    </script>
+</body>
+</html>

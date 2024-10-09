@@ -1,0 +1,92 @@
+<!--  Scopes in JS -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scopes</title>
+  </head>
+  <body>
+    <h1>Scopes</h1>
+    <h3>Actually Scopes are '3' types</h3>
+    <ul>
+      <li>Global Scope</li>
+      <li>Function Scope</li>
+      <li>Block Scope</li>
+    </ul>
+    <hr />
+    <hr />
+    <script>
+      //  Global Scope
+      //  We can access from any where any place
+
+      var a = 30;                                            // Global Scope
+      let b = 50;
+      const c = 10;
+      function name() {
+        document.write(a, "--", "Single Block", "<br>");
+        document.write(b, "--", "Single Block", "<br>");
+        document.write(c, "--", "Single Block", "<br>");
+        if (a < c) {
+          document.write(c, "--", "Double Block");
+        } else {
+          document.write(b, "--", "Double block", "<br>");
+        }
+      }
+      name();
+      document.write(a, "--", "No Block", "<br>");
+      document.write(b, "--", "No Block", "<br>");
+      document.write(c, "--", "No Block", "<br>");
+
+      // ------------------------------------------------------------------------------
+      // Function Scope
+      // It work in betwwen the function block only
+
+      function hari() {
+        var a1 = "hari";                                        // Function Scope
+        let a2 = "perivi";
+        const a3 = "krishna";
+        
+        document.write(a1 ,"<br>");
+        document.write(a2 ,"<br>");
+        document.write(a3 ,"<br>");
+
+        if (a1 == a2) {
+          document.write(a1 , a2 , "--", "Single Block");
+        } else {
+          document.write(a2 , a1 , a3, "--", "Single block", "<br>");
+        }
+      }
+      hari()
+      // document.write(a1)         //error
+      // document.write(a2)         //error
+      // document.write(a3)         //error
+
+      // ----------------------------------------------------------------------------------
+
+      // Block scope
+
+      function cricketers() {
+        // document.write(cricketer1 , "<br>")        here write means it shows undefined
+        if (10<20) {
+          var cricketer1 = "KL_Rahul"                               // Block scope
+          let cricketer2 = "V.Kohli"
+          const cricketer3 = "Rohit"
+
+          document.write(cricketer1 , "--", "No Block", "<br>")
+          document.write(cricketer2 , "--", "No Block", "<br>")
+          document.write(cricketer3 , "--", "No Block", "<br>")
+        }
+          document.write(cricketer1 , "<br>")
+          // document.write(cricketer2 , "<br>")        // Error
+          // document.write(cricketer3 , "<br>")        // Error
+      }
+      cricketers()
+          // document.write(cricketer1 , "<br>")        // Error
+          // document.write(cricketer2 , "<br>")        // Error
+          // document.write(cricketer3 , "<br>")        // Error
+    </script>
+  </body>
+</html>
+

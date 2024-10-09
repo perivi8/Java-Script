@@ -1,0 +1,128 @@
+<!-- onclick , ondblclick -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>onclick , ondblclick</title>
+    <link rel="stylesheet" href="File 54 JS Events.css" />
+  </head>
+  <body>
+    <h1>onclick , ondblclick</h1>
+    <header>
+      <div id="id1">Container</div>
+      <div>
+        <ul id="id2">
+          <li id="li2">Revenue</li>
+          <li id="li2">Sales</li>
+          <li id="li2">Customers</li>
+          <li id="li2">Reports</li>
+          <li id="li2">Settings</li>
+        </ul>
+      </div>
+      <div style="padding-top: 12px;">
+        <button>First method</button>
+      </div>
+      <div style="padding-top: 12px">
+        <button onclick="Signin()" ondblclick="Signup()">Second method</button>   <!-- We can use only one onclick , one ondblclick in each tag-->
+      </div>
+
+    </header>
+
+    <main>
+      <div class="class2">
+        <nav>
+          <ul style="list-style-type: none; padding: inherit">
+            <li class="class1" id="li1">Dashboard</li>
+            <li class="class1" id="li1">Revenue</li>
+            <li class="class1" id="li1">Sales</li>
+            <li class="class1" id="li1">Customers</li>
+            <li class="class1" id="li1">Reports</li>
+            <li class="class1" id="li1">Meetings</li>
+            <li class="class1" id="li1">Events</li>
+            <li class="class1" id="li1">Settings</li>
+          </ul>
+        </nav>
+      </div>
+      <div id="id3">
+        <div id="id4">
+          <h2>Revenue</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime,
+            perspiciatis!
+          </p>
+        </div>
+        <div id="id4">
+          <h2>Sales</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni,
+            deleniti.\
+          </p>
+        </div>
+        <div id="id4" >
+          <h2>Customers</h2>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore,
+            dolorem?
+          </p>
+        </div>
+        <div id="id4" >
+          <h2>Reports</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam,
+            consequatur.
+          </p>
+        </div>
+        <div id="id4" >
+          <h2>Meetings</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat,
+            quidem.
+          </p>
+        </div>
+        <div id="id4">
+          <h2>Events</h2>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum,
+            nulla!
+          </p>
+        </div>
+      </div>
+    </main>
+    <script>
+        // First Method
+
+        // onclick
+        var btn = document.getElementsByTagName("button")[0]
+        btn.onclick = function(){
+            btn.innerText = "New Method"
+            document.querySelector("header").style.backgroundColor = "skyblue"
+        }
+
+        // ondblclick
+        btn.ondblclick =function(){
+            btn.innerText = "Chat gpt method"
+            document.querySelector("header").style.backgroundColor = "violet"
+        }
+
+        // =======================================================
+
+        // Second Method   "(Recommended)"
+        
+        // onclick 
+        var Signin = function(){
+            document.getElementsByTagName("button")[1].innerText = "Recommended Method"
+            document.querySelector("header").style.backgroundColor = "red"
+        }
+
+        // ondblclick
+        var Signup = function(){
+            document.getElementsByTagName("button")[1].innerText = "Youtube method"
+            document.querySelector("header").style.backgroundColor = "green"
+        }
+
+        
+    </script>
+  </body>
+</html>

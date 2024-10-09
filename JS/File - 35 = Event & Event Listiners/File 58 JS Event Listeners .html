@@ -1,0 +1,134 @@
+<!-- Event & Event-listeners File -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event & Event-listeners File</title>
+    <link rel="stylesheet" href="File 54 JS Events.css" />
+  </head>
+  <style>
+    button {
+      padding: 14px;
+    }
+    a{
+        text-decoration: none;
+        color: rgb(4, 5, 4);
+        background-color: red;
+        border-radius: 3px;
+    }
+  </style>
+  <body>
+    <h1>Event & Event-listeners File</h1>
+    <header>
+      <div id="id1">Container</div>
+      <div>
+        <ul id="id2">
+          <li id="li2">Revenue</li>
+          <li id="li2">Sales</li>
+          <li id="li2">Customers</li>
+          <li id="li2">Reports</li>
+          <li id="li2">Settings</li>
+        </ul>
+      </div>
+      <div>
+        <button id="loginbtn">Login</button>
+      </div>
+    </header>
+
+    <main>
+      <div id="side_nav">
+        <div class="class2">
+          <nav>
+            <ul style="list-style-type: none; padding: inherit">
+              <li class="class1" id="li1">Dashboard</li>
+              <li class="class1" id="li1">Revenue</li>
+              <li class="class1" id="li1">Sales</li>
+              <li class="class1" id="li1">Customers</li>
+              <li class="class1" id="li1">Reports</li>
+              <li class="class1" id="li1">Meetings</li>
+              <li class="class1" id="li1">Events</li>
+              <li class="class1" id="li1">Settings</li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div id="content">
+        <div id="id3">
+          <div id="id4">
+            <h2>Revenue</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime,
+              perspiciatis!
+            </p>
+          </div>
+          <div id="id4">
+            <h2>Sales</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni,
+              deleniti.\
+            </p>
+          </div>
+          <div id="id4">
+            <h2>Customers</h2>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore,
+              dolorem?
+            </p>
+          </div>
+          <div id="id4">
+            <h2>Reports</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam,
+              consequatur.
+            </p>
+          </div>
+          <div id="id4">
+            <h2>Meetings</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat,
+              quidem.
+            </p>
+          </div>
+          <div id="id4">
+            <h2>Events</h2>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum,
+              nulla!
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <div id="box">
+      <label for="name">My Name:</label>
+      <input type="text" name="name" id="name" />
+      <label for="email">Email :</label>
+      <input type="email" name="email" id="email" />
+      <input type="submit" value="Submit"/>
+      <a href="" id="close">CLOSE</a>
+    </div>
+    <script>
+      //  First we need to hide the input details (none = "not-display", block = "display")
+      const box = (document.getElementById("box").style.display = "none");
+
+      //   Login Action function
+      document.getElementById("loginbtn").addEventListener("click", LOGIN);
+      function LOGIN() {
+        document.getElementById("side_nav").style.display = "none";
+        document.getElementById("content").style.display = "none";
+        document.getElementById("box").style.display = "block";
+      }
+
+      //   Close Action function
+      //   Note : In some cases data diaplay will effect , To rectify this problem we need to store that display data in new "div" 
+      document.getElementById("close").addEventListener("click", SUBMIT);
+      function SUBMIT() {
+        document.getElementById("side_nav").style.display = "block";
+        document.getElementById("content").style.display = "block";
+        document.getElementById("box").style.display = "none";
+      }
+    </script>
+  </body>
+</html>

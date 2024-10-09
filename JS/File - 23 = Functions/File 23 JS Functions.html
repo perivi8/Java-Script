@@ -1,0 +1,42 @@
+<!-- Functions in JavaScript -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Functions in JavaScript</title>
+  </head>
+  <body>
+    <h1>Function</h1>
+    <p>A set of functions that perform a task or calculates the value</p>
+    <script>
+      //  Ex 1
+
+      function fruits() {
+        return console.log("this are Fruits");
+      }
+      fruits();
+
+      // ---------------------------------------------
+
+      //  Ex 2
+      function Name(name, gender = "Others") { // name , gender are " Parametres"
+        return console.log(name + " is an " + gender);
+      }
+
+      Name("Hari", "Male"); // hari , male are the " Arguments "
+      Name("Perivi");
+
+      // ----------------------------------------------
+
+      // Ex 3
+
+      function Apple(a , b , c) {
+        return console.log( c = a + b)
+      }
+      Apple(8 ,3)
+      Apple(4 , 6 , 2) // It will choose above condition only , it will not choose 2
+    </script>
+  </body>
+</html>

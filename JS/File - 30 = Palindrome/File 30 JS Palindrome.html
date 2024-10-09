@@ -1,0 +1,65 @@
+<!-- Palindrome -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Palindrome</title>
+  </head>
+  <body>
+    <h1>Palindrome</h1>
+    <script>
+      // Ex 1
+      //  If we given like "nitin" , "madam" .., then only it is palindrome
+
+      function palindrome(string) {
+        var name = string.split("");         // we need to enter manually(split("") , reverse() , join(""))
+        var letter = name.reverse();
+        var result = letter.join("");
+        if (string == result) {
+          alert(string + "  This is palindrome");
+        } else {
+          alert(string + "  Not a palindroe");
+        }
+      }
+
+      console.log(palindrome("Nitin"));          // output = notpalindrome
+
+
+
+      // Ex 2
+      //  If we given like "nitin" , "madam" .., or  "Nitin" , "Madam".., it show palindrome
+
+      function palindrome1(string1) {
+        var name1 = string1.split("");       // we need to enter manually(split("") , reverse() , join(""))
+        var letter1 = name1.reverse();
+        var result1 = letter1.join("");
+        if (string1.toLowerCase() == result1.toLowerCase()) {  //we need to enter toLowerCase() manually
+          alert(string1 + "  This is palindrome*");
+        } else {
+          alert(string1 + "  Not a palindroe*");
+        }
+      }
+
+      console.log(palindrome1("Nitin")); // output = This is palindrome*
+
+
+      //  Ex 3
+      //  If there is Number means , then conver it into String()
+      function palindrome2(string2) {
+        string2 = string2.toString()           // we need to enter toString() Manually
+        var name2 = string2.split("");         // we need to enter manually(split("") , reverse() , join(""))
+        var letter2 = name2.reverse();
+        var result2 = letter2.join("");
+        if (string2 == result2) {
+          alert(string2 + "  This is palindrome**");
+        } else {
+          alert(string2 + "  Not a palindroe**");
+        }
+      }
+
+      console.log(palindrome2(12321)); // output = This is palindrome**
+    </script>
+  </body>
+</html>

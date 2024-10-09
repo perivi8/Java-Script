@@ -1,0 +1,41 @@
+<!-- this Keyword -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>this Keyword</title>
+  </head>
+  <body>
+    <h1>this Keyword</h1>
+    <p>In JavaScript, the 'this' keyword refers to the object that is currently executing or calling the function</p>
+    <script>
+      console.log(this)       // it shows windows
+      console.log(window)     // this , window both are same
+
+      //  Ex 1
+      var a = 10
+      console.log(this.a);       
+
+      // Ex 2
+      function sports() {
+         console.log(this.a)
+      }
+      sports()
+
+      //  Ex 3
+      var obj = {                        // This is "OBJECT"  => obj = {}
+          movie : "Kalki",               // This are "PROPERTIESS"  => movie : "kalki" , collection : "1500cr"
+          collection : '1500cr',
+          func : function Name() {       // This is calld as "METHOD" => The function exists in between the object means then it is called as "Method"
+              console.log(this)          // Here it Represent the " obj "  .., not " windows " 
+              console.log(this.a)        // undefined
+          }
+          // func()                       // Don't write here.. it show Error
+      }
+
+      obj.func()
+    </script>
+  </body>
+</html>

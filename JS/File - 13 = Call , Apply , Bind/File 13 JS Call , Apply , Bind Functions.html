@@ -1,0 +1,114 @@
+<!-- Call ,Apply , BindFunction -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Call , Apply , Bind Function</title>
+  </head>
+  <body>
+    <h1>Call , Apply , Bind Function</h1>
+    <h2>Call</h2>
+    <p>call : The call method immediately invokes the function with the specified this value and individual arguments.</p>
+    <h2>Apply</h2>
+    <p>apply : Like call , the apply method immediately invokes the function but accepts arguments as an array or array-like object.</p>
+    <h2>bind</h2>
+    <p> bind : The bind method doesn't immediately invoke the function.</p>
+    <p>With the bind() method, an object can borrow a method from another object.</p>
+    <script>
+      // This 3 types are used to Manuplate the " this keyword "
+      
+
+      //  Call Function
+
+      //  Ex 1
+
+      var salary = 25000;
+
+      function getSalary() {
+        console.log(this.salary);
+        console.log(this.Name); // undefined
+      }
+      getSalary();
+
+      var element = {                      // **  object loo unna data niii function loo show chesthaam
+        salary: 30000,
+        Name: "Perivi",
+        Roll_no: 206320014,
+      };
+
+      getSalary.call(element);
+
+      //  Ex 2
+
+      var Movie = "SALAAR";
+
+      function getMovie(a, b) {
+        console.log(this.Movie); // First it shows SALAAR  , Second it shows MIRCHI
+        console.log(this.Name); // first time undefined secondtime Prabhas
+        console.log(a, b);  // first time undefined secondtime 50 50
+      }
+      getMovie();
+
+      var Cinema = {
+        Movie: "MIRCHI",
+        collection: 1500000000,
+        Name: "Prabhas",
+        Roll_no: 22,
+      };
+
+      getMovie.call(Cinema, 50, 50);       // in call function we are using " , "
+
+      //   -------------------------------------------------------------------------------
+
+      // Apply
+
+      //  It also Similar to the Call Function.
+
+      var Movie1 = "KALKI";
+
+      function getMovie1(a1, b1) {
+        console.log(this.Movie1); // First it shows KALKI  , Second it shows BAHUBALI
+        console.log(this.Name1); // first time undefined secondtime Prabhas , RANA
+        console.log(a1, b1); //first time undefined secondtime 20 21
+      } 
+      getMovie1();
+
+      var Cinema1 = {
+        Movie1: "BAHUBALI",
+        collection1: "1800 CR",
+        Name1: "Prabhas , RANA",
+        Roll_no1: 18,
+      };
+
+      getMovie1.apply(Cinema1 ,[20, 21]);  // in apply function we are using " [ ] "
+
+      //   --------------------------------------------------------------------------------------
+
+      // Bind
+
+      function getMovie2(a2) {
+        console.log(this.Movie2); 
+        console.log(this.Name2);
+        console.log(a2);  
+    }
+      getMovie2();
+    
+      var Cinema2 = {
+        Movie2: "Hari",
+        collection2: 8106811285,
+        Name2: "Perivi",
+        Roll_no2: 8,
+      };
+
+   
+    var result = getMovie2.bind(Cinema2 ,100);  // we need to compulsary create variable
+     result()
+    // console.log(result)                // Don't Write Like this
+     
+
+
+    </script>
+  </body>
+</html>

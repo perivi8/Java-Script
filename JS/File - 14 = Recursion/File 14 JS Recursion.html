@@ -1,0 +1,28 @@
+<!-- Recursion -->
+<!-- Recursion is same in 'JS'  &  'Python' -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recursion</title>
+  </head>
+  <body>
+    <h1>Recursion</h1>
+    <p>Recursion is the technique of making a function call itself</p>
+    It is a feature used in creating a function that keeps calling itself but with a smaller input every consecutive time until the code's desired result from the start is achieved.
+    <script>
+      function factorial(n) {
+        if (n == 0) {
+          return 1;
+        } else {
+          return n * factorial(n - 1);
+        }
+      }
+      console.log(factorial(2)); // 2 * 1
+      console.log(factorial(5)); // 5 * 4 * 3 * 2 * 1
+
+    </script>
+  </body>
+</html>

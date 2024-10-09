@@ -1,0 +1,33 @@
+<!-- For-in loop -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>For - in loop</title>
+  </head>
+  <body>
+    <h1>For-in loop</h1>
+    <script>
+      //  For-in is used for Objects
+
+      const person = {
+        fname: "John",
+        lname: "Doe",
+        age: 25,
+      };
+      for (let key in person) {
+        console.log(key); // Outputs: fname, lname, age
+        console.log(`The ${key} is an ${person[key]}`)
+      }
+
+      //  if we are using For_in  in array then it will show oly index values
+      var fruits = ["Apple", "Banana", "Goa"];
+      for (const iterator in fruits) {
+        console.log(iterator);
+      }
+
+    </script>
+  </body>
+</html>

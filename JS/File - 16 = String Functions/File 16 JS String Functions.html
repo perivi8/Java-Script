@@ -1,0 +1,75 @@
+<!-- String Functions -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Function</title>
+</head>
+<body>
+    <div>
+        <h1>
+            String Functions
+        </h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, laborum?
+        </p>
+    </div>
+    <script>
+        var a = "This time i got good marks in 'Maths' & i will prove it this is very easy" 
+        var b = "          This is    also     a string     ."  
+        var c = "          This is    also     a string.     "  
+
+
+         // Split
+        var split = a.split("")             
+        console.log(split)
+
+        var split1 = a.split(" ")
+        console.log(split1)
+
+        // ------------------------------------------------
+
+        // substring 
+        // In between the given index values
+        var subst = a.substring(1,7)        
+        console.log(subst)
+
+        var subst1 = a.substring(8 , 0)
+        console.log(subst1)
+
+        // -------------------------------------------------
+
+        // Replace the elements
+        var replaced = a.replace('Maths' , "physics")    
+        console.log(a)
+        console.log(replaced)
+
+        // -------------------------------------------------
+
+        // Upper Case & Lower Case
+        console.log(a.toUpperCase())      // change to Capital letters
+        console.log(a.toLowerCase())     // Change to small letters
+
+        // ------------------------------------------------
+
+        // Trim(
+        console.log(b)
+        console.log(c.trim())   // it will remove the space for first & last of the setence.
+
+        // -------------------------------------------------
+
+        // charAt
+
+        var a = "hari krishna perivi"
+        console.log(a.charAt(8))    // it show particular index value
+
+        // or
+
+        console.log(a[8])
+
+        
+    </script>
+</body>
+</html>

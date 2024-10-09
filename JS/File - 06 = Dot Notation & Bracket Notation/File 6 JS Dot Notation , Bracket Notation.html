@@ -1,0 +1,57 @@
+<!-- Dot vs Bracket Notation -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dot vs Bracket Notation</title>
+  </head>
+  <body>
+    <h1>Dot vs Bracket Notation</h1>
+    <script>
+      //  Ex 1
+      var a = {
+        name: "hari",
+        mob_no: 810811285,
+        Branch: "ECE",
+      };
+
+      // Dot Notation
+      console.log(a.mob_no);
+      console.log(a.Branch);
+
+      // Bracket Notation
+      console.log(a["mob_no"]);
+      console.log(a["Branch"]);
+
+      //   ----------------
+
+      //    Ex 2
+      var b = {
+        name: "Perivi",
+        mob_no: 9440203095,
+        Branch: "CSE",
+      };
+
+      var change = "name";
+      console.log(b.change); // Undefined
+      console.log(b["change"]); // undefined
+      console.log(b[change]);      // Don't use  string in b/w Brackets
+
+      //   -------------------
+
+      //    Ex 3
+      var c = {
+        name: "krishna",
+        mob_no: 7569307720,
+        Branch: "ME",
+        123: "ID_Card",
+      };
+
+      // console.log(c.123)            // it show Error
+      console.log(c["123"]);
+ 
+    </script>
+  </body>
+</html>

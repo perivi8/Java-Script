@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var name = prompt("Enter your name :");
+      var weight = prompt("Enter your weight in kilograms:");
+      var height = prompt("Enter your height in meters:");
+
+      const bmi = weight / (height * height);            // BMI = Kg(weight)/m*m (meter * meter)
+
+      if (bmi < 18.5) {
+        console.log("Mr.",name,"your bmi is : ",bmi,' &',"you are","Under Weight");
+
+      } 
+      else if (bmi >= 18.5 && bmi < 25) {
+        console.log("Mr.",name,"your bmi is : " ,bmi," &","you are","Normal Weight");
+      }
+      else if (bmi >= 25 && bmi < 30) {
+        console.log("Mr.",name,"your bmi is : " , bmi," &","you are","Over Weight");
+      }
+      else {
+        console.log("Mr.",name,"your bmi is : ",bmi," &" ,"you are","Obesity");
+      }
+      
+    </script>
+  </body>
+</html>

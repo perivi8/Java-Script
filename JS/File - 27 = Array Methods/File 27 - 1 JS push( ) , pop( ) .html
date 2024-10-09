@@ -1,0 +1,41 @@
+<!--  Push , Pop -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Push & Pop</title>
+  </head>
+  <body>
+    <h1>Push & Pop</h1>
+    <script>
+      // push
+      // ex 1 (Correct method)
+
+      var a = ["hari", "krishna", "perivi"];
+      a.push(206320014);
+      console.log(a);
+
+      //   ex 2 (Wrong method) , (It show only the length of array)
+      var a = ["hari", "krishna", "perivi"];
+      var z = a.push(206320014); // or   z = a.push(206320014)
+      console.log(z);
+
+      // -----------------------------------------------------------------------------------
+
+      // pop 
+      // pop is actually used to remove the last index value
+
+      // ex 1 (Correct method)
+      var b = ["hari", "krishna", "perivi"];
+      b.pop();
+      console.log(b);
+
+      // ex 2 (It show only the last name in array which is removed)
+      var b = ["hari", "krishna", "perivi"];
+      var z = b.pop();
+      console.log(z);
+    </script>
+  </body>
+</html>

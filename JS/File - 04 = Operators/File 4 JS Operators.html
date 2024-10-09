@@ -1,0 +1,89 @@
+<!--  Operators -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Operators</title>
+  </head>
+  <body>
+    <div class="container">
+      <div>
+        <h1>Operators</h1>
+        <p>
+          In JavaScript, operators are symbols used to perform operations on variables and values.
+        </p>
+      </div>
+    </div>
+
+    <script>
+      var a = 4;
+      var b = 9;
+
+      // Arithmetic Operators ( + , - , * , / )
+      console.log("The Value of a+b = ", a + b);
+      console.log("The Value of a-b = ", a - b);
+      console.log("The Value of a*b = ", a * b);
+      console.log("The Value of a/b = ", a / b);
+      console.log("The Value of a**b = ", a ** b);    // a to the power b
+
+      // ---------------------------------------------------------------
+
+      // prefix
+       ++a                                             // Increment
+       console.log("the value of ++a =" , a)
+      --b                                              // Decrement
+      console.log("the value of --b =" , b)
+      // --------------------
+      //  Post prefix
+      a++  
+      console.log("the value of a++ =" , a)           // Increment
+      b--
+      console.log("the value of a-- =" , b)           // Decrement
+      
+      //-------------------------------------------------------------------
+
+      //  Shiftkey Operators
+      //  It working on Binary condition (i.e.., Please refer in AI)
+
+      // ex 1                               //  a << b 
+      var a = 10
+      var b = 24                           
+      document.write(a<<b)
+     
+      document.write("<br>")
+
+      //ex 2
+      var a = 2
+      var b = 6                      
+      document.write(a<<b)
+
+     document.write("<br>")
+      // ---------------------
+    //  ex 1
+      const a1 = 19;                         // a >> b
+      const b1 = 3;                      
+      document.write(a1 >> b1); 
+
+      document.write("<br>")
+
+      // ex 2
+      var a = 277
+      var b = 16                    
+      document.write(a >> b)
+    
+      document.write("<br>")
+      
+      // ------------------------------------------------------------------------
+      document.write("<br>")
+
+      //  Assignment Operators ( >= , <= , +- ,......,)
+
+      var a = 20 >= 10
+      console.log(a)                   // output = true
+
+    </script>
+    
+  </body>
+</html>

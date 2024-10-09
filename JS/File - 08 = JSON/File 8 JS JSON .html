@@ -1,0 +1,49 @@
+<!--  Json -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Json</title>
+  </head>
+  <body>
+    <h1>Json</h1>
+    <h3>In Json We have <mark> 2 Methods </mark></h3>
+    <ul>
+      <li>Stringify</li>
+      <!-- Stringify used to convert the "object" into "string" -->
+      <li>Parse</li>
+      <!--  Parse is used to convert the "String" into "Object" -->
+    </ul>
+    <script>
+      //  The use of JSON is to change the content of Object
+      var a = {
+        name: "hari",
+        roll_no: 206320014,
+        clas: "B.tech",
+        fav_color: "Green",
+      };
+
+      //   Stringify
+      console.log(a);
+      var b = JSON.stringify(a); // stringify is used to convert the object into string
+      console.log(b);
+
+      //   Replace
+      var c = b.replace("Green", "Red"); // we can replace only after convert 'object' into ' srtring '
+      console.log(c);
+
+      //   Parse
+      var d = JSON.parse(c);
+      console.log(d);
+
+      // ----------------------------------
+      //   First we need to convert the object into string After that only we can replace the data  , Other wise it through a error
+
+      console.log(a);
+      var c = a.replace("Green", "Red");
+      console.log(c);
+    </script>
+  </body>
+</html>

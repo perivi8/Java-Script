@@ -1,0 +1,40 @@
+<!-- Map -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MAP</title>
+  </head>
+  <body>
+    <h1>Map</h1>
+    <p>map() is a method of the Array object. It creates a new array by calling a function on every element of the original array and storing the results in a new array. map() returns the new array, and the original array is unchanged.</p>
+    <script>
+      var companies = [
+        { name: "infosis", year: 1995, category: "IT company" },
+        { name: "Appolo", year: 1925, category: "hospital " },
+        { name: "Mahendra", year: 1895, category: "IT company" },
+        { name: "Swift", year: 1975, category: "Car company" },
+        { name: "Google", year: 1595, category: "Web company" },
+        { name: "MS", year: 1997, category: "IT company" },
+      ];
+
+
+      //   Annonymus Function
+      var c1 = companies.map(function (companies) {
+        return companies.year;
+      });  
+      console.log(c1)
+
+      //    Arrow Function  ** Best Method
+      var b = companies.map((company) => company.category);
+      console.log(b);
+
+      var b = companies.map((company) => company.year > 1990);
+      console.log(b);
+
+      
+    </script>
+  </body>
+</html>

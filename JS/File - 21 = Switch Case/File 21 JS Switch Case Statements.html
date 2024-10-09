@@ -1,0 +1,68 @@
+<!-- Switch Case -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch Case</title>
+</head>
+<body>
+    <h1>Switch Case Statements</h1>
+    <p>It is the similar like if-else , but it is advance than if-else condition.</p>
+    <script>
+        // Ex 1
+
+        switch (true) {
+            case 10>20:
+                document.write("The condition is True")
+                break;
+        
+            default:
+                document.write("False condition")
+                break;
+        }
+
+        document.write("<br>")
+
+        // Ex -2
+        a = 30
+        b =50
+        switch (a>b) {                           
+            case 10>20:
+                document.write("It is True")
+                break;
+            case 10<20:
+                document.write("It is true")
+                break;
+        
+            default:
+                document.write("wrong")
+                break;
+        }
+     
+        document.write("<br>")
+        //  Ex 3
+
+        var a = 30
+        var b = 20
+
+        switch (a+b) {                           
+            case a>b:
+                my_answer = 'Green Color'
+                break;
+            case a<b:
+                my_answer = "Blue Color"
+                break;
+            case a==b:
+                my_answer = "Yellow color"
+            default:
+                my_answer = "Black Color"
+                break;
+        }
+
+        document.write(my_answer)
+
+    </script>
+</body>
+</html>

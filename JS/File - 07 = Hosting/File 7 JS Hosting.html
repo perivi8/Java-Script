@@ -1,0 +1,45 @@
+<!--  Hosting -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hosting</title>
+  </head>
+  <body>
+    <h2>Hosting</h2>
+    <p> a JavaScript mechanism where variables and function declarations are moved to the top of their scope before code execution</p>
+    <script>
+      //  In JS it run the code line by line
+
+      //  Ex 1
+      var name = "perivi Hari"; // Normal Condition
+      console.log(name);
+
+      //   Ex 2
+      console.log(name1);
+      var name1 = "Perivi Krishna"; // Undefined
+
+      //   Ex 3
+      var a;
+      console.log(a); // undefined
+      a = "perivi";
+
+      //   Ex 4
+
+      function Name() {                 // Normal Condition
+        return console.log("Perivi Hari Krishna");
+      }
+      Name();
+
+      //  Ex 5
+      Name1();                                 // Hosting
+      // console.log(x)  it show error
+      function Name1() {
+        return console.log("Perivi Hari Krishna **");
+        var x = 10
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,45 @@
+<!--  Filter -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Filter</title>
+  </head>
+  <body>
+    <h1>Filter</h1>
+    <p>'Filter' is used to create a new array from an existing one, containing only those items that satisfy a condition specified in a function.</p>
+    <script>
+      var a = ["hari", "krishna", "perivi", "kumar", "parugu", "akhil", "amar"];
+
+      var b = a.filter((name) => name.includes("k"));
+      console.log(b);
+
+      var c = a.filter((name1) => name1.startsWith("a"));
+      console.log(c);
+
+      var c = a.filter((self) => self.lastIndexOf("hari"))  // it remove 
+      console.log(c);
+
+
+      // Ex 2
+
+      var d = [
+        { name: "infosis", year: 1995, category: "IT company" },
+        { name: "Appolo", year: 1925, category: "hospital " },
+        { name: "Mahendra", year: 1895, category: "IT company" },
+        { name: "Swift", year: 1975, category: "Car company" },
+        { name: "Google", year: 1595, category: "Web company" },
+        { name: "MS", year: 1997, category: "IT company" },
+      ];
+          
+      // if we use like .., StartWith , includes .., then it show error , because it choose only the "String" Content
+
+      var c = d.filter((name2) => name2.year > 1970 );   
+      console.log(c);
+
+      
+    </script>
+  </body>
+</html>

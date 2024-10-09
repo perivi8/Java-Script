@@ -1,0 +1,40 @@
+<!-- Programe code for Switch Case -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programe code for Switch Case</title>
+</head>
+<body>
+    <h1>Programe code for Switch Case</h1>
+    <script>
+        name = prompt("Enter your name  :")
+        marks = prompt("Enter your marks :")
+        switch (true) {
+            case marks<=100 && marks>=91:
+                document.write(name , " you got 'A+'")
+                break;
+            case marks<=90 && marks>=81 :
+                document.write(name , " you got 'A'")  
+                break;
+            case marks<=80 && marks>=71:
+                document.write(name , " you got 'B'")
+                break;
+                
+            case marks<=70 && marks>=30:
+                 document.write(name , " you got 'C'")
+                break;
+
+                case marks<=31 && marks>=1:                // if we give 0 least marks , without enter value in prompt it choose 0 only
+                document.write(name , " you are 'Fail'")
+                break;
+            default: 
+                document.write("Please enter vali detals..,")
+                break;
+        }
+
+    </script>
+</body> 
+</html>

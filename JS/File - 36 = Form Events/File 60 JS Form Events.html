@@ -1,0 +1,80 @@
+<!-- Form Events -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Events</title>
+    <link rel="stylesheet" href="File 60-1 Form Events.css">
+    <style></style>
+</head>
+<body>
+    <h1>Form Events</h1>
+    <header>
+        <div id="id1">Container</div>
+        <div>
+          <ul id="id2">
+            <li id="li2">Revenue</li>
+            <li id="li2">Sales</li>
+            <li id="li2">Customers</li>
+            <li id="li2">Reports</li>
+            <li id="li2">Settings</li>
+          </ul>
+        </div>
+      </header>
+  
+      <main>
+        <div class="class2">
+          <nav>
+            <ul style="list-style-type: none; padding: inherit">
+              <li class="class1" id="li1">Dashboard</li>
+              <li class="class1" id="li1">Revenue</li>
+              <li class="class1" id="li1">Sales</li>
+              <li class="class1" id="li1">Customers</li>
+              <li class="class1" id="li1">Reports</li>
+              <li class="class1" id="li1">Meetings</li>
+              <li class="class1" id="li1">Events</li>
+              <li class="class1" id="li1">Settings</li>
+            </ul>
+          </nav>
+        </div>
+            <form action="" id="form">
+              <div>
+                <label for="name">Nmae :</label>
+                <input type="text" name="name" id="name">
+              </div>
+              <br>
+               <div>
+                <label for="email">Mail :</label>
+                <input type="email" name="email" id="email">
+               </div>
+               <br>
+                <div>
+                  <input type="submit" value="Submit">
+                </div>       
+            </form>
+        <div>
+            <h2>Details :</h2>
+            <h2 id="display_name" style="color: chartreuse;"></h2>
+            <h2 id="display_mail" style="color: rgb(0, 26, 255);"></h2>
+        </div>
+        <script>
+          // Submit
+          document.getElementById("form").addEventListener("submit" , (e) =>{
+            e.preventDefault()   // It is used to stop refreshing when we click on submit
+
+            var input_name = document.getElementById("name").value
+            document.getElementById("display_name").textContent = input_name
+
+            var input_mail = document.getElementById("email").value
+            document.getElementById("display_mail").textContent = input_mail
+
+            // reset()
+            document.getElementById("form").reset() // reset() is used to once the input value printed then it remove the data in input box
+          })
+
+          // remaining Types not need
+        </script>
+</body>
+</html>

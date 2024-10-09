@@ -1,0 +1,71 @@
+<!-- closures -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>closure</title>
+  </head>
+  <body>
+    <h1>closures</h1>
+    <p> Def : A closure is the combination of a function bundled together (enclosed) with references to its surrounding state (the lexical environment). In other words, a closure gives you access to an outer function's scope from an inner function.
+    </p>
+    <p>  
+      Ex - Closures are created when a function is defined inside another function, and the inner function retains access to the variables in the outer function's scope
+    </p>
+    <script>
+      //  outer = parent , inner = Child
+      //  By Naturally child got data from parents , not  parents got data from child
+
+
+      //    Ex 1
+
+      function outer() {
+        var x = 20;
+        console.log(x);
+        // console.log(y)             //it show error
+        //  return x+y                // it will show error , because y is not defined
+        function inner() {
+          var y = 10;
+          console.log(y);
+          console.log(x);
+          return x + y;                // inner function acces to outer Variables called as "Lexical Scope"
+        }
+        console.log(inner());           // it will used to execute inner function
+        // outer()                       //  Don't Write here
+      } 
+      outer();                          // it will use to call the entire function
+      //   inner()                      // it show error
+   
+      //-------------------------------------------------------------
+
+      //    Ex 2
+
+      function Outer(num1) {
+        function Inner(num2) {
+          return num1 * num2;
+        }
+        return Inner;
+      }
+
+      var a = Outer(4);                   // compulsary we need to store in variable
+      console.log(a(3));
+
+      //   --------------------------------------------------------------
+
+      // Ex 3
+
+      function Outer1(num1) {
+        var x = 10
+        function Inner1(num2) {
+          return num1 * num2 + x;
+        }
+        return Inner1;
+      }
+
+      var b = Outer1(5);                      // compulsary we need to store in variable
+      console.log(b(8));
+    </script>
+  </body>
+</html>

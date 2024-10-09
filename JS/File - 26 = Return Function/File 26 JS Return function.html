@@ -1,0 +1,62 @@
+<!-- REturn Function in JS -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Return Function</title>
+  </head>
+  <body>
+    <h1>Return Function</h1>
+    <ul>
+      <li>Functiom with parameters & Return Value</li>
+    </ul>
+    <script>
+
+      // Functiom with parameters & Return Value
+
+      // Ex 1
+      function perivi(x, y) {
+        return x + y + "<br>";     // Don't write (,) ; use only ( + ) symbool in Return ; in some cases (,) will work
+      }
+      document.write(perivi(10, 20));
+      // perivi(10,20)             // It won't work because we need to add either console or document.write
+
+
+      //   Ex 2 (Wrong Process)
+      function perivi1(a, b) {
+        document.write(a + b + "<br>");      // Must use Return
+      }
+      perivi1(2,7);
+
+
+      // Ex 3
+      function perivi2(c, d) {
+        return document.write(c + d + "<br>");
+      }
+      perivi2(2, 6);
+
+      
+      //  Ex 4
+      function sports(x , y) {
+          return document.write("I like " + x , " and " + y + "<br>")
+      }
+      sports("cricket" , "free fire")
+
+
+    
+
+    // =====================================================================================
+
+    //  Using Dialog box writing code
+
+    var Name = prompt("Please Enter your 'name'")
+    function name(friend) {
+        return document.write("Hii Mr. " + friend)
+    }
+
+    name(Name)
+    </script>
+  </body>
+</html>

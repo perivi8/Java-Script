@@ -1,0 +1,51 @@
+header {
+    background-color: darkorange;
+    color: aliceblue;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 101px;
+  }
+  
+  #id1 {
+    padding: 16px;
+    padding-left: 50px;
+  }
+  
+  #id2 {
+    gap: 59px;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .class2 {
+    background-color: rgb(44, 44, 147);
+  }
+
+  #li1:hover {
+    background-color: rgba(0, 255, 255, 0.349);
+    width: auto;
+    height: auto;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  #li2:hover {
+    background-color: rgb(0, 47, 255);
+    width: auto;
+    height: auto;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .class1 {
+    padding: 20px 56px 20px 56px;
+  }
+
+  main {
+    display: flex;
+    gap: 30px;
+  }
+
+  #input_details{
+    padding: 10px;
+  }

@@ -1,0 +1,49 @@
+<!--  Reverse -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reverse</title>
+</head>
+<body>
+    <h1>Reverse</h1>
+    <script>
+
+        // Ex1
+        var a = "king"
+
+        var spt = a.split("")         // we need to enter manually (split("") , reverse() , join(""))
+        console.log(spt);
+
+        var rvs = spt.reverse()
+        console.log(rvs);
+
+        var jn = rvs.join("")
+        console.log(jn);
+     
+        
+        // Ex 2
+        function func1(b) {
+            var spt1 = b.split("")                    // don't use space in b/w strings 
+            var rvs1 = spt1.reverse()
+            var jn1 = rvs1.join("")
+
+            return jn1
+        }
+        
+        console.log(func1("hari"))
+        
+
+        // Ex 3
+        function func2(string2) {
+        var name2 = string2.split(" ");      // If we use space in between strings means it will show same name
+        var letter2 = name2.reverse();
+        var lt = letter2.join("")
+             return lt
+        }
+        console.log(func2("hari"))
+    </script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!-- Muliti Dimensional Array -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Multi Dimensional Array</title>
+  </head>
+  <body>
+    <h1>Multi Dimensional Array</h1>
+    <script>
+      // ex 1 (2D)
+      var a = [
+        [10, 32, 56, 23],
+        [43, 65, 276],
+        [26, 87, 1, 9, 5, 8],
+        [2, 5],
+      ];
+
+      console.log(a[2]);                          // output = [26,87,1,9,5,8].
+      console.log(a[1][2]);                      // output = 276
+
+
+      //  Ex 2 (3D)
+      var b = [
+        [
+          ["hari", 34, 24, "perivi"],
+          [23, 25, "krishan", 100],
+        ],
+        [10, 32, 56, 23],
+        [43, 65, 2],
+        [26, 87, 1, 9, 5, 8],
+        [2, 5],
+      ];
+      console.log(b[0][1][3]);                   // output = 100
+
+
+    //   Ex 3
+    var c = [
+        [2 , 78 , "akhil"],
+        [12 , 33,
+          ["hari", 34, 24, "perivi"],
+          [23, 25, "krishan", 100],3489
+        ],
+        [10, 32, 56, 23],
+        [43, 65, 2],
+        [26, 87, 1, 9, 5, 8],
+        [2, 5],
+      ];
+      console.log(c[1][4]);                 // output = 3489
+    </script>
+  </body>
+</html>

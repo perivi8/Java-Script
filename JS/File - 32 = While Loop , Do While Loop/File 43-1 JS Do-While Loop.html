@@ -1,0 +1,40 @@
+<!-- Do-While Loop -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Do-While Loop</title>
+</head>
+<body>
+    <h1>Do-While Loop</h1>
+    <p>do-while loop ensures that the statement(s) is executed at least once before evaluating the condition.</p>
+    <script>
+        // Ex 1
+        // if we write condition wrong even though it run the output single time
+
+        y = 0                                                  //  Initial value
+        do {
+            document.write(y,")","This is Do-While Loop" , "<br>")
+            y++                                                //  Increment 
+        } while (y>10);                                        //  Condition
+        // y++  Don't write here
+
+        // Ex 2
+        z = 0
+        do {
+            document.write(z , ")", "Do-While Loop" , "<br>")
+            z++
+        } while (z<=10);
+
+        // Ex 3
+
+        x = 10
+        do {
+            console.log(x , ")", "Do-While Loop 1" , "<br>")
+            x--
+        } while (x>=1);
+    </script>
+</body>
+</html>

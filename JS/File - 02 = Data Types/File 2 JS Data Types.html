@@ -1,0 +1,96 @@
+<!--  Data Types -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Data Types</title>
+  </head>
+  <body>
+    <h1>Data Types</h1>
+    <div>
+      <h3>The Data types are 2 types</h3>
+      <ol>
+        <li>Primitive Data types</li>
+        <li>Complex Data types</li>
+      </ol>
+      <h4>Primitive Data tpes</h4>
+      <ul>
+        <li>Strings</li>
+        <li>Number</li>
+        <li>Boolean</li>
+        <li>Null</li>
+        <li>Undefined</li>
+      </ul>
+      <h4>Complex Data types</h4>
+      <ul>
+        <li>Array</li>
+        <li>Object</li>
+      </ul>
+    </div>
+    <hr />
+    <hr />
+    <!-- JS -->
+    <script>
+      // Primitive Data types
+
+      a = "apple";
+      console.log(a); // Strings
+
+      console.log(10); // Numbers
+
+      b = 10 > 20; // Boolean ( True or False)
+      console.log(b);
+
+      c = null; // null
+      console.log(c);
+
+      var d; // Undefined
+      console.log(d);
+
+      // --------------------------------------------------------------------------------------
+
+      //  bigInt it also a primitive data type
+      
+      var a = 999999999999999999; // if we are using more than 15numbers it convert into 1000000000000000
+      var b = 999999999999999999n; //bigInt
+
+      console.log(a);
+      console.log(b);
+
+      //-----------------------------------------------------------------------------
+
+      // Complex Data types
+
+      //  Array
+      var a = ["hari", "krishna", "perivi"]; // array
+      console.log(a[2]);
+
+      var a = ["hari"]; // Array & undefined
+      console.log(a[2]);
+
+      var a = "hari"; // without array
+      console.log(a[2]);
+
+      var b = ["hari krishna", "perivi", 22, { Domain: "ML" }];
+      console.log(b);
+
+      // --------------------------------
+      // Object
+      var c = {
+        Branch: "ECE",
+        Sesction: "A",
+        roll_no: 206320014,
+      };
+      console.log(c);
+
+      // Write the text or anything by JS
+
+      document.write("<h1>This is JS Heading</h1>");
+      document.write("This is the message of JS <br>");
+      document.write(8106811285);
+      // --------------------------------------------------------------------------------------
+    </script>
+  </body>
+</html>

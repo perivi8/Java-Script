@@ -1,0 +1,71 @@
+<!--  Index Of -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Index of</title>
+  </head>
+  <body>
+    <h1>Index of</h1>
+    <script>
+      // Index of
+
+      //   Ex 1
+      var b = ["apple", "banana", "goa", "apple", "watermelon"];
+      var c = b.indexOf("goa");
+      console.log(c);
+
+      let text = "Hello world, welcome to the universe.";
+      let result = text.indexOf("welcome");
+      console.log(result);
+
+      //   Ex 2
+      var b = ["apple", "banana", "goa", "apple", "watermelon"];
+      var c = b.indexOf("hari"); // if it not there means it show -1
+      console.log(c);
+
+      //   Ex 3
+      var b = ["apple", "banana", "goa", "apple", "watermelon"];
+      var c = b.indexOf("hari");
+
+      if (c == -1) {
+        console.log(b.push("perivi"));
+      }
+      console.log(b);
+      // ------------------------------------------------------------------------
+
+      // Last Index-of
+
+      var b = ["apple", "banana", "goa", "apple", "watermelon"];
+      var c = b.lastIndexOf("apple");
+      console.log(c);
+
+      //----------------------------------------------------------------------------
+
+      // Find the "Length" of array
+
+      var x = [1, 28, 23, 74, 54, 26, 17, 68, 99, 310];
+      console.log(x.length);
+
+
+
+      // =================================================================================
+
+
+
+      // Some Examples of Index-of , Last Index-of
+      //    Ex
+      var a = "This time i got good marks in 'Maths' & i will prove it this is very easy";
+      var b = "          This is    also     a string     .";
+      var c = "          This is    also     a string.     ";
+
+      var position = a.indexOf("go"); // it counts index from 0 and space also will count , it choos #got
+      console.log(position);
+
+      var position1 = a.lastIndexOf("go"); // It choose the  # good
+      console.log(position1);
+    </script>
+  </body>
+</html>

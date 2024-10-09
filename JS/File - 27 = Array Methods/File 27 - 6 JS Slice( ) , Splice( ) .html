@@ -1,0 +1,44 @@
+<!--  Slice() , Splice() -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>slice & Splice</title>
+</head>
+<body>
+    <h1>Slice & Splice</h1>
+    <p>slice(): The slice() method is used to extract a portion of an array and returns a new array containing the extracted elements.</p>
+    <p> splice(): The splice() method is used to change the contents of an array by removing or replacing existing elements and/or adding new elements in place.</p>
+    <script>
+        // Slice 
+        // ex 1
+        var a = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
+        var slice = a.slice(1, 3);         // it choose index 1 , 2
+        console.log(slice)
+
+        // ex2
+        var a = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
+        var slice = a.slice(3, 4);         // it choose index 3
+        console.log(slice)
+
+        // ----------------------------------------------------------------------------------------
+
+        // Splice 
+        // ex 1
+        const fruits = ["Banana", "Orange", "Apple", "Mango"];
+        fruits.splice(2,0, "Lemon", "Kiwi"); // First 2 is position of index , another 0 is number of removing elements after index value
+        a=fruits.indexOf("Apple")
+        console.log(fruits)
+        console.log(a)
+
+        // ex 2
+        const Fruits = ["Banana", "Orange", "Apple", "Mango"];
+        fruits.splice(2 , 3, "Lemon", "Kiwi");   // First 2 is position of index , another 2 is number of removing elements after index value
+        a=fruits.indexOf("Apple")
+        console.log(fruits)
+        console.log(a)
+    </script>
+</body>
+</html>

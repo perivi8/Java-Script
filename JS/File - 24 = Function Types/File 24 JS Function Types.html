@@ -1,0 +1,83 @@
+<!--  Types of Functions -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function types</title>
+</head>
+<body>
+    <h1>Functions in JavaScript</h1>
+    <h2>In functions they have 3 types</h2>
+    <ul>
+      <li>Named Function</li>
+      <li>Anonymous Function</li>
+      <li>Arrow Function</li>
+    </ul>
+    <Script>
+    //  Named Function
+
+      // Ex 1
+      function hari() {
+        document.write("hii hari", "<br>");
+      }
+
+      hari();
+      hari();
+      hari();
+
+      // ------------------------------------------------------------------------------
+
+
+
+      // Anonymous function
+
+      var b = function () {
+        // without name is Anonymous Function
+        document.write("This 'Anonymous Function'", "<br>");
+      };
+      b();
+
+
+
+      //   ------------------------------------------------------------------------------
+
+
+
+      //    Arrow Function
+
+      //   Ex 1
+
+      const fruits = () => {document.write(`I like grapes juice`, "<br>");};
+      fruits();
+
+
+      //    Ex 2
+
+      const fruits1 = (x, y) => {document.write(`I like grapes ${x} times & juice ${y} times`, "<br>");};
+      fruits1(2, 5);
+
+
+      //    Ex 3
+
+      let sum = (a, b) => a + b +  "<br>";
+      document.write(sum(3,4))
+
+
+
+      //   ----------------------------------------------------------------------------------
+
+
+
+      // Function Expression   (Additional Topic function)
+
+      var a = function hari() {
+        document.write("This is 'Fuction Expression' ", "<br>");
+      };
+
+      a();
+      // hari()                       // Errors
+    </Script>
+</body>
+</html>

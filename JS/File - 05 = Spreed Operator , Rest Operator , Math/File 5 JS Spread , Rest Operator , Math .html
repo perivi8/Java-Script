@@ -1,0 +1,61 @@
+<!-- Spread & Rest Operators -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spread & Rest Operators</title>
+  </head>
+  <body>
+    <h1>Spreed & Rest Operators</h1>
+    <p>The spread operator is used for expanding elements,  </p>
+    <p>The rest operator simplifies the handling of variable-length arguments in functions. It allows functions to accept an indefinite number of arguments without explicitly specifying each one.</p>
+    <script>
+      //   spread(...)
+      //   Spread is used to add previous array or object in a next array or object
+
+      // Ex 1 (Array)
+      var b = [2, 6, 3, 9, 10];
+      var c = [...b, 3, 6, 20, 16, 4];
+
+      console.log(c);
+
+      //   Ex 2 (Object)
+
+      set1 = {
+        name: "hari",
+        roll_no: 206320014,
+        class: "B.Tech",
+      };
+
+      set2 = {
+        ...set1,
+        Brach: "ECE",
+        Mobile_no: 810681125,
+      };
+
+      console.log(set2);
+
+      //   ----------------------------------------------------------------------------------
+
+      // Rest(...)
+
+      function sum(a , b , ...rest){      //  sum(a , b , ...rest , c)  Wrong case
+        console.log(rest)
+      }
+      sum(1,2,3,4,5)
+
+      //   ---------------------------------------------------------------------------------
+
+      // Math
+      // By using math we can find max , min , sin , cos ,.......,
+      var a = [2, 56, 27, 90, 34];
+      var max = Math.max(...a);                    // convert array into list of items
+      console.log(max);
+
+      //   ----------------------------------------------------------------------------------
+      
+    </script>
+  </body>
+</html>

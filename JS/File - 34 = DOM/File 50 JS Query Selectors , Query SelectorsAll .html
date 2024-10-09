@@ -1,0 +1,114 @@
+<!-- Query Selectors , Query SelectorsAll -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Query Selectors , Query SelectorsAll</title>
+    <link rel="stylesheet" href="File 44 JS DOM.css">
+</head>
+<body>
+    <h1>Query Selectors , Query SelectorsAll</h1>
+    <header>
+      <div id="id1">Container</div>
+      <div>
+        <ul id="id2">
+          <li id="li2">Revenue</li>
+          <li id="li2">Sales</li>
+          <li id="li2">Customers</li>
+          <li id="li2">Reports</li>
+          <li id="li2">Settings</li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+      <div class="class2">
+        <nav>
+          <ul style="list-style-type: none; padding: inherit">
+            <li class="class1" id="li1">Dashboard</li>
+            <li class="class1" id="li1">Revenue</li>
+            <li class="class1" id="li1">Sales</li>
+            <li class="class1" id="li1">Customers</li>
+            <li class="class1" id="li1">Reports</li>
+            <li class="class1" id="li1">Meetings</li>
+            <li class="class1" id="li1">Events</li>
+            <li class="class1" id="li1">Settings</li>
+          </ul>
+        </nav>
+      </div>
+      <div id="id3">
+        <div id="id4">
+          <h2>Revenue</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime,
+            perspiciatis!
+          </p>
+        </div>
+        <div id="id4">
+          <h2>Sales</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni,
+            deleniti.\
+          </p>
+        </div>
+        <div id="id4">
+          <h2>Customers</h2>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore,
+            dolorem?
+          </p>
+        </div>
+        <div id="id4">
+          <h2>Reports</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam,
+            consequatur.
+          </p>
+        </div>
+        <div id="id4">
+          <h2>Meetings</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat,
+            quidem.
+          </p>
+        </div>
+        <div id="id4">
+          <h2>Events</h2>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum,
+            nulla!
+          </p>
+        </div>
+      </div>
+    </main>
+    <script>
+        // Query Selector
+        var a = document.querySelector("#li2")  // it choose first priority
+        console.log(a);
+        a.textContent = "Query Selector"
+
+        // -------------------------------------------------------------------
+
+        // Query SelectorsAll
+
+        // Ex 1
+        var b = document.querySelectorAll(".class1")[1]  // we can easily modify manually
+        console.log(b);
+        b.innerHTML = "<h2>Auery SelectorAll</h2>"
+
+        // Ex 2
+        var c = document.querySelectorAll("#id4")
+        console.log(c)
+
+        for (let index = 0; index < c.length; index++) {
+            const element = c[index];
+            element.textContent = "this is also Query selector all"
+            
+        }
+        
+
+    </script>
+</body>
+</html>
